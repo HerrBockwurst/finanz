@@ -5,11 +5,16 @@
 		<Set starting="collapsed" visible="0">
 			<Entry order="0" action="expand" langString="Planung" />
 			<Entry order="10" action="click" target="uebersicht" langString="Uebersicht" />
-			<Entry order="20" action="click" langString="NeuesJahr" />
-			<Entry order="30" action="click" langString="Budgets" />
+			<Entry order="20" action="click" target="newyear" langString="NeuesJahr" />
+			<Entry order="30" action="click" target="budgets" langString="Budgets" />
 		</Set>
 	</Menu>
 	<Pages>
-		
+		<Page id="uebersicht" src="uebersicht.php" />
+		<Page id="newyear" src="newyear.php" />
+		<Page id="budgets" src="budgets.php" />
 	</Pages>
+	<Handlers dir="handlers">
+		<Handler id="addYear" src="addYear.php" />
+	</Handlers>
 </Module>
